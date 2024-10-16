@@ -21,7 +21,7 @@ jobs:
         run: echo "${{ secrets.GCP_CREDENTIALS }}" > account.json
 
       - name: Set up Google Cloud SDK
-        uses: google-github-actions/setup-gcloud@master
+        uses: google-github-actions/setup-gcloud@v2
         with:
           project_id: firstgcp-project-438818
           service_account_key: ${{ secrets.GCP_CREDENTIALS }}
